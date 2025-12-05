@@ -1,0 +1,9 @@
+streamlit>=1.40.0
+langchain>=0.3.0
+langchain-openai>=0.1.25
+langchain-core>=0.3.0
+git+https://github.com/langchain-ai/langgraph.git@main#subdirectory=libs/langgraph
+python-dotenv>=1.0.0
+yfinance>=0.2.40
+pandas>=2.0.0
+pandas-ta>=0.3.14b0
