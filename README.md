@@ -123,11 +123,15 @@ The project uses a **LangGraph** state machine with the following nodes:
 - **Action Node**: Executes selected tools
 - **Conditional Edge**: Determines whether to continue or end conversation
 
-```
-[User Query] → [Agent] → [Should Continue?]
-                   ↑            ↓
-                   └─── [Tool Execution]
-```
+### Agent Workflow Diagram
+
+![Agent Workflow](graph_visualization.png)
+
+The visual above shows the agent's decision flow:
+- **Start** → **Agent** node evaluates the query
+- **Conditional edge** checks if tools are needed
+- If "continue" → **Action** node executes tools → loops back to **Agent**
+- If "end" → conversation terminates
 
 ## Configuration
 
