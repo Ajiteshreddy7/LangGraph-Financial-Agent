@@ -47,8 +47,5 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Graph visualizations
-graph_visualization.png
-
 # Logs
 *.log
