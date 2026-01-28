@@ -1,7 +1,9 @@
 # Financial Analyst AI Agent 📈
 
 An intelligent conversational AI assistant for equity research and stock analysis, built with LangGraph, LangChain, and Streamlit. The agent provides real-time stock prices, comprehensive technical analysis, and side-by-side stock comparisons with human-in-the-loop clarification for ambiguous queries.
+### Agent Workflow Diagram
 
+![Agent Workflow](graph_visualization.png)
 ## Features
 
 - **Real-Time Stock Prices**: Fetch current market prices for any publicly traded stock
@@ -123,9 +125,7 @@ The project uses a **LangGraph** state machine with the following nodes:
 - **Action Node**: Executes selected tools
 - **Conditional Edge**: Determines whether to continue or end conversation
 
-### Agent Workflow Diagram
 
-![Agent Workflow](graph_visualization.png)
 
 The visual above shows the agent's decision flow:
 - **Start** → **Agent** node evaluates the query
